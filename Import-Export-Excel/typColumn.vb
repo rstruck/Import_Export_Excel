@@ -1,0 +1,4 @@
+﻿
+Class typColumn
+
+End Class
