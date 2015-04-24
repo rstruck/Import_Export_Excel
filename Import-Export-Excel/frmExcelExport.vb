@@ -1346,6 +1346,8 @@ Public Class frmExcelExport
                 itemrows = dsimportitems.Tables("ItemSpecs").Select("ProposalNumber = " & importproposalnumber & " and Rev = " & importrev).FirstOrDefault()
                 If String.IsNullOrEmpty(looprows.Item("FirstRowFormatted").ToString) = True And String.IsNullOrEmpty(looprows.Item("SecondRowFormatted").ToString) = True And String.IsNullOrEmpty(looprows.Item("ThirdRowFormatted").ToString) = True Then
 
+
+
                     ' find and compare entire row first.
                     foundRows = dsimportitems.Tables("ItemSpecs").Select("ProposalNumber = '" & importproposalnumber & "'")
                     If Not looprows.Equals(itemrows) Then
